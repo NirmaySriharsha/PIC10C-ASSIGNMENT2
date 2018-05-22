@@ -140,6 +140,13 @@ void MainWindow::slot_change_class(int course) const{
     ui->label_9->setVisible(show);
     ui->label_14->setVisible(!show);
 
+    ui->radioButton->setAutoExclusive(false);
+    ui->radioButton_2->setAutoExclusive(false);
+    ui->radioButton->setChecked(false);
+    ui->radioButton_2->setChecked(false);
+    ui->radioButton->setAutoExclusive(true);
+    ui->radioButton_2->setAutoExclusive(true);
+
 }
 
 void MainWindow::slot_compute() const{
