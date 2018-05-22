@@ -116,6 +116,9 @@ void MainWindow::slot_change_class(int course) const{
     ui->horizontalSlider_11->setEnabled(show);
     ui->horizontalSlider_11->setValue(0);
 
+    ui->horizontalSlider->setValue(0);
+    ui->horizontalSlider_2->setValue(0);
+    ui->horizontalSlider_3->setValue(0);
     ui->horizontalSlider_8->setValue(0);
     ui->horizontalSlider_9->setValue(0);
     ui->horizontalSlider_10->setValue(0);
@@ -134,8 +137,6 @@ void MainWindow::slot_change_class(int course) const{
     ui->label_12->setEnabled(show);
 
 
-    //ui->label_9->setEnabled(show);
-    //ui->label_14->setEnabled(!show);
     ui->label_9->setVisible(show);
     ui->label_14->setVisible(!show);
 
